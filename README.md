@@ -14,3 +14,5 @@ python gen_idcard.py
 
 ## generate image with given text
 python gen_text_line.py
+
+you can see the result in res dir
