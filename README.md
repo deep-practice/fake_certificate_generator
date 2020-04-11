@@ -15,11 +15,11 @@ usage
 ```
 python gen_idcard.py
 ```
-full version  
+ * full version  
 ![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_full.jpg)  
-front version  
+ * front version  
 ![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_front.jpg)  
-back version  
+ * back version  
 ![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_back.jpg)
 
 *  generate image with given text
