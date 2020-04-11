@@ -11,18 +11,18 @@ if no pip module found on your machine,you should install one first
 usage
 ====
 
-### generate idcard image
+* generate idcard image
 ```
 python gen_idcard.py
 ```
-#### full version
-![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_full.jpg)
-#### front version
-![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_front.jpg)
-#### back version
+full version  
+![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_full.jpg)  
+front version  
+![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_front.jpg)  
+back version  
 ![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_back.jpg)
 
-### generate image with given text
+*  generate image with given text
 ```
 python gen_text_line.py
 ```
