@@ -28,3 +28,11 @@ python gen_text_line.py
 ```
 ![image](https://github.com/deep-practice/idcard_generator/blob/master/res/line_res.png)  
 if no error occurs,you can see the result in res dir
+,otherwise you should change the line
+```
+_, contours, _= cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+```
+to
+```
+contours, _= cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+```
