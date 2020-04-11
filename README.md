@@ -1,5 +1,5 @@
 # idcard generator
-A simple code for generating idcard
+A simple code for generating idcard,academic research only
 
 envioriment
 ====
