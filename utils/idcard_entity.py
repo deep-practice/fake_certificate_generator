@@ -30,8 +30,8 @@ def verify_id(id_number):
         return bool(re.match(ID_NUMBER_15_REGEX, id_number))
 
 
-def generate_id(area_code,sex=0):
-    """随机生成身份证号，sex = 0表示女性，sex = 1表示男性"""
+def generate_id(area_code,gender=0):
+    """随机生成身份证号，gender = 0表示女性，gender = 1表示男性"""
     # 随机生成一个区域码(6位数)
     id_number = area_code
     # 限定出生日期范围(8位数)
@@ -41,55 +41,55 @@ def generate_id(area_code,sex=0):
     # 顺序码(2位数)
     id_number += str(random.randint(10, 99))
     # 性别码(1位数)
-    id_number += str(random.randrange(sex, 10, step=2))
+    id_number += str(random.randrange(gender, 10, step=2))
     # 校验码(1位数)
     return id_number + str(get_check_digit(id_number))
 
-class IDCard():
+class IDCard:
 
     def __init__(self,name,nation,addr,id_number,province_name,city_name):
         super(IDCard, self).__init__()
-        self.id = id_number
-        self.area_id = int(self.id[0:6])
-        self.birth_year = int(self.id[6:10])
-        self.birth_month = int(self.id[10:12])
-        self.birth_day = int(self.id[12:14])
-        self.addr = addr
-        self.name = name
-        self.nation = nation
-        self.province_name = province_name
-        self.city_name = city_name
+        self.__id = id_number
+        self.__area_id = int(self.__id[0:6])
+        self.__birth_year = int(self.__id[6:10])
+        self.__birth_month = int(self.__id[10:12])
+        self.__birth_day = int(self.__id[12:14])
+        self.__addr = addr
+        self.__name = name
+        self.__nation = nation
+        self.__province_name = province_name
+        self.__city_name = city_name
 
     def get_id(self):
-        return self.id
+        return self.__id
 
     def get_addr(self):
-        return self.addr
+        return self.__addr
 
     def get_birth_year(self):
-        return self.birth_year
+        return self.__birth_year
 
     def get_birth_month(self):
-        return self.birth_month
+        return self.__birth_month
 
     def get_birth_day(self):
-        return  self.birth_day
+        return  self.__birth_day
 
-    def get_sex(self):
+    def get_gender(self):
         """通过身份证号获取性别， 女生：0，男生：1"""
-        return ["男","女"][int(self.id[16:17]) % 2]
+        return ["男","女"][int(self.__id[16:17]) % 2]
 
     def get_nation(self):
-        return self.nation
+        return self.__nation
 
     def get_name(self):
-        return self.name
+        return self.__name
 
     def get_province_name(self):
-        return self.province_name
+        return self.__province_name
 
     def get_city_name(self):
-        return self.city_name
+        return self.__city_name
 
 
 
