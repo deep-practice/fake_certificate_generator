@@ -15,7 +15,6 @@ usage
 ```
 python gen_idcard.py
 ```
- * front version  
 ![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_front.jpg)  
 *  generate vehicle license
 ```
