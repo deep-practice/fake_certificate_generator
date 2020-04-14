@@ -1,5 +1,5 @@
-# idcard generator
-A simple code for generating idcard,academic research only
+# fake certificate generator
+A simple code for generating fake certificate,academic research only
 
 envioriment
 ====
@@ -27,6 +27,11 @@ python gen_vehicle_license.py
 python gen_driving_license.py
 ```
 ![image](https://github.com/deep-practice/fake_certificate_generator/blob/master/res/dl_front_res.png)  
+*  generate business license  
+```
+python gen_business_license.py
+```
+![image](https://github.com/deep-practice/fake_certificate_generator/blob/master/res/bl_res.jpg)  
 *  generate image with given text
 ```
 python gen_text_line.py
