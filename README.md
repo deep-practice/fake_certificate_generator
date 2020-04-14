@@ -15,13 +15,18 @@ usage
 ```
 python gen_idcard.py
 ```
- * full version  
-![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_full.jpg)  
- * front version  
 ![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_front.jpg)  
- * back version  
-![image](https://github.com/deep-practice/idcard_generator/blob/master/res/idcard_back.jpg)
+*  generate vehicle license
+```
+python gen_vehicle_license.py
+```
+![image](https://github.com/deep-practice/fake_certificate_generator/blob/master/res/vl_front_res.png)   
 
+*  generate driving license
+```
+python gen_driving_license.py
+```
+![image](https://github.com/deep-practice/fake_certificate_generator/blob/master/res/dl_front_res.png)  
 *  generate image with given text
 ```
 python gen_text_line.py
